@@ -60,7 +60,7 @@ function initTypewriter() {
     "Automate repetitive work.",
     "Deploy autonomous agents.",
     "Level up your team's AI literacy.",
-    "Latest models. Your business, your rules."
+    "Latest models. We make them yours."
   ];
 
   let phraseIndex = 0;
