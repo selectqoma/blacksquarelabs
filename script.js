@@ -57,10 +57,10 @@ function initTypewriter() {
   if (!target || reduceMotion) return;
 
   const phrases = [
-    "Find repetitive work.",
-    "Connect tools and context.",
-    "Deploy agents with approval.",
-    "Train the team."
+    "Deployed, not demoed.",
+    "No more copy-paste between tabs.",
+    "Agents that work while you sleep.",
+    "Yours to run when we're done."
   ];
 
   let phraseIndex = 0;
