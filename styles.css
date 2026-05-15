@@ -527,12 +527,16 @@ main,
 }
 
 .footer-wordmark {
+  width: fit-content;
   margin: 0;
+  padding: 0.04em 0.08em;
   font-family: var(--display);
   font-size: clamp(2.4rem, 6vw, 5.2rem);
   font-style: normal;
   font-weight: 800;
   line-height: 0.95;
+  background: var(--fg);
+  color: var(--bg);
 }
 
 .footer p:not(.footer-wordmark):not(.copyright) {
