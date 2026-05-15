@@ -57,10 +57,10 @@ function initTypewriter() {
   if (!target || reduceMotion) return;
 
   const phrases = [
-    "Automate repetitive work.",
-    "Deploy autonomous agents.",
-    "Level up your team's AI literacy.",
-    "Latest models. We make them yours."
+    "Stop copying things between tabs.",
+    "Let AI handle the inbox. You close the deals.",
+    "Your team thinks. AI does the grunt work.",
+    "Automate the jobs that shouldn't need a human.",
   ];
 
   let phraseIndex = 0;
