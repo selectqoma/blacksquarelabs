@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Book a free AI audit with Blacksquare Labs.">
+    <title>Contact — Blacksquare Labs</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260515-5">
+  </head>
+  <body class="contact-page">
+    <canvas class="warp-grid" id="warp-grid" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="/" class="wordmark" aria-label="Blacksquare Labs home">
+        <img src="/assets/blacksquarelabs_logo_figma_export.png" alt="Blacksquare Labs">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#build">Work</a>
+        <a href="/#method">Method</a>
+        <a href="/" class="nav-cta">Back home</a>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-hero" aria-labelledby="contact-title">
+        <p class="eyebrow">BSL · 03 / Free audit</p>
+        <h1 id="contact-title">Book the first conversation.</h1>
+        <p>Tell us what you want to automate, integrate, or improve. We will reply with next steps and a short audit format.</p>
+      </section>
+
+      <form class="contact-form" action="https://formsubmit.co/hello@blacksquarelabs.dev" method="post">
+        <input type="hidden" name="_subject" value="Blacksquare Labs audit request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
+        <label>
+          Name
+          <input name="name" autocomplete="name" required>
+        </label>
+        <label>
+          Work email
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>
+          Company
+          <input name="company" autocomplete="organization">
+        </label>
+        <label>
+          What should AI improve?
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Request the audit</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
