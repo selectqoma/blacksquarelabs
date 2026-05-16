@@ -57,7 +57,7 @@ function initTypewriter() {
   if (!target || reduceMotion) return;
 
   const phrases = [
-    "Stop copying things between tabs.",
+    "Automate what's slowing your team down.",
     "Let AI handle the inbox. You close the deals.",
     "Your team thinks. AI does the grunt work.",
     "Automate the jobs that shouldn't need a human.",
