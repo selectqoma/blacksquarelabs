@@ -1,4 +1,24 @@
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Fill these before running ads; tracking stays unloaded while IDs are blank.
+const trackingConfig = {
+  gtmId: "",
+  googleAdsConversionId: "AW-18170140878",
+  googleAdsConversionLabel: ""
+};
+const consentKey = "bsl_cookie_consent";
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  window.dataLayer.push(arguments);
+}
+
+gtag("consent", "default", {
+  ad_storage: "denied",
+  analytics_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  wait_for_update: 500
+});
 
 function initLenis() {
   if (reduceMotion || typeof Lenis === "undefined") return;
@@ -95,6 +115,93 @@ function initTypewriter() {
   }
 
   tick();
+}
+
+function loadGtm() {
+  if (!trackingConfig.gtmId || document.querySelector("[data-gtm-loader]")) return;
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.dataset.gtmLoader = "true";
+  script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(trackingConfig.gtmId)}`;
+  document.head.appendChild(script);
+
+  window.dataLayer.push({
+    "gtm.start": Date.now(),
+    event: "gtm.js"
+  });
+}
+
+function loadGoogleTag() {
+  const tagAlreadyLoaded = Array.from(document.scripts).some((script) => (
+    script.src.includes(`gtag/js?id=${trackingConfig.googleAdsConversionId}`)
+  ));
+
+  if (!trackingConfig.googleAdsConversionId || document.querySelector("[data-google-tag-loader]") || tagAlreadyLoaded) return;
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.dataset.googleTagLoader = "true";
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(trackingConfig.googleAdsConversionId)}`;
+  document.head.appendChild(script);
+
+  gtag("js", new Date());
+  gtag("config", trackingConfig.googleAdsConversionId);
+}
+
+function grantTrackingConsent() {
+  gtag("consent", "update", {
+    ad_storage: "granted",
+    analytics_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted"
+  });
+  loadGoogleTag();
+  loadGtm();
+}
+
+function hasTrackingConsent() {
+  return window.localStorage.getItem(consentKey) === "accepted";
+}
+
+function trackEvent(eventName, params = {}) {
+  if (!hasTrackingConsent()) return;
+
+  window.dataLayer.push({
+    event: eventName,
+    ...params
+  });
+
+  if (eventName === "thank_you_view" && trackingConfig.googleAdsConversionId && trackingConfig.googleAdsConversionLabel) {
+    gtag("event", "conversion", {
+      send_to: `${trackingConfig.googleAdsConversionId}/${trackingConfig.googleAdsConversionLabel}`
+    });
+  }
+}
+
+function initTracking() {
+  if (hasTrackingConsent()) grantTrackingConsent();
+
+  document.querySelectorAll("[data-track='booking_click']").forEach((item) => {
+    item.addEventListener("click", () => {
+      trackEvent("booking_click", {
+        link_url: item.getAttribute("href") || "",
+        page_path: window.location.pathname
+      });
+    });
+  });
+
+  document.querySelector("[data-contact-form]")?.addEventListener("submit", () => {
+    trackEvent("form_submit", {
+      page_path: window.location.pathname
+    });
+  });
+
+  if (document.body.dataset.conversionPage === "thank_you") {
+    trackEvent("thank_you_view", {
+      page_path: window.location.pathname
+    });
+  }
 }
 
 function initWarpGrid() {
@@ -214,6 +321,7 @@ function initWarpGrid() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+  initTracking();
   initLenis();
   initSpotlight();
   initReveal();

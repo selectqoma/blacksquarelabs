@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        wait_for_update: 500
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18170140878"></script>
+    <script>
+      gtag("js", new Date());
+      gtag("config", "AW-18170140878");
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
@@ -83,7 +99,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#build">Work</a>
         <a href="#method">Method</a>
-        <a href="/contact.html" class="nav-cta">Book a call</a>
+        <a href="/contact.html" class="nav-cta" data-track="booking_click">Book a call</a>
       </nav>
     </header>
 
@@ -106,7 +122,7 @@
           Tell us what's eating your team's time. We build AI that handles it. No lock-in — it runs on your systems, your team owns it.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="/contact.html">Book the free audit</a>
+          <a class="button button-primary" href="/contact.html" data-track="booking_click">Book the free audit</a>
           <a class="button button-secondary" href="#build">See what we build</a>
         </div>
       </section>
@@ -187,7 +203,7 @@
             <h3>Challenge us.</h3>
             <p>The messy workflow, the overloaded inbox, the buried knowledge base, the recurring report, the approval chain everyone avoids — that's exactly the brief.</p>
           </div>
-          <a href="/contact.html" class="button button-invert">Book a call →</a>
+          <a href="/contact.html" class="button button-invert" data-track="booking_click">Book a call →</a>
         </div>
       </section>
 
@@ -239,7 +255,7 @@
     <footer class="footer">
       <div class="footer-cta">
         <p class="footer-cta-lead">What could AI do for your team?</p>
-        <a href="/contact.html" class="footer-cta-btn">Book the free audit →</a>
+        <a href="/contact.html" class="footer-cta-btn" data-track="booking_click">Book the free audit →</a>
       </div>
       <div class="footer-bottom">
         <div class="footer-brand">
