@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-labelledby="core-title core-description">
+  <title id="core-title">Your business, connected by an agentic core</title>
+  <desc id="core-description">A natural language request flows into an AI orchestration core, which connects CRM, email, documents, support, finance and operations. This is an illustrative architecture.</desc>
+  <defs>
+    <linearGradient id="core-face" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f7f7f7"/>
+      <stop offset=".46" stop-color="#dddddd"/>
+      <stop offset=".58" stop-color="#f0f0f0"/>
+      <stop offset="1" stop-color="#bcbcbc"/>
+    </linearGradient>
+    <linearGradient id="core-edge-cool" gradientUnits="userSpaceOnUse" x1="207" y1="258" x2="278" y2="198">
+      <stop stop-color="#375dfb" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#375dfb" stop-opacity=".95"/>
+      <stop offset=".7" stop-color="#92aaff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#92aaff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="core-edge-warm" gradientUnits="userSpaceOnUse" x1="393" y1="307" x2="328" y2="368">
+      <stop stop-color="#92aaff" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#92aaff" stop-opacity=".95"/>
+      <stop offset=".7" stop-color="#375dfb" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#375dfb" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="node-face" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#353535" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#1c1c1c" stop-opacity=".5"/>
+    </linearGradient>
+    <pattern id="field" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".75" fill="#cfcfcf" opacity=".16"/>
+    </pattern>
+  </defs>
+  <rect x="6" y="6" width="588" height="468" fill="url(#field)"/>
+  <g fill="none" stroke="#b5b5b5">
+    <circle cx="300" cy="282" r="128" opacity=".2"/>
+    <circle cx="300" cy="282" r="144" opacity=".12" stroke-dasharray="2 7"/>
+    <path d="M300 138a144 144 0 0 1 139 106M300 426a144 144 0 0 1-139-106" opacity=".45" stroke-width="2"/>
+  </g>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="22" font-family="Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="1.6" fill="#c3c3c3">START WITH NATURAL LANGUAGE</text>
+    <rect x="113" y="40" width="374" height="74" rx="13" fill="#292929" fill-opacity=".72" stroke="#818181" stroke-opacity=".65"/>
+    <path d="m291 114 9 9 9-9" fill="#292929" fill-opacity=".72" stroke="#818181" stroke-opacity=".65"/>
+    <path d="M291 114h18" stroke="#292929" stroke-width="2"/>
+    <text x="300" y="70" font-size="21" fill="#f5f5f5">“Prepare this week’s</text>
+    <text x="300" y="97" font-size="21" fill="#f5f5f5">client updates.”</text>
+  </g>
+  <g fill="none" stroke="#a4a4a4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 124v77"/>
+    <path d="M166 187h17q13 0 13 13v36h14M166 283h44M166 379h17q13 0 13-13v-38h14"/>
+    <path d="M434 187h-17q-13 0-13 13v36h-14M434 283h-44M434 379h-17q-13 0-13-13v-38h-14"/>
+  </g>
+  <g fill="#92aaff">
+    <path d="m296 166 4 6 4-6Z"/>
+    <path d="m182 279-6 4 6 4Zm236 0 6 4-6 4Z"/>
+    <circle cx="196" cy="218" r="3"/><circle cx="404" cy="218" r="3"/>
+    <circle cx="196" cy="348" r="3"/><circle cx="404" cy="348" r="3"/>
+  </g>
+  <rect x="203" y="194" width="194" height="178" rx="16" fill="#eeeeee" opacity=".05"/>
+  <rect x="207" y="198" width="186" height="170" rx="13" fill="none" stroke="#dddddd" stroke-opacity=".55"/>
+  <path d="M207 258v-47a13 13 0 0 1 13-13h58" fill="none" stroke="url(#core-edge-cool)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M393 307v48a13 13 0 0 1-13 13h-52" fill="none" stroke="url(#core-edge-warm)" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="214" y="205" width="172" height="156" rx="9" fill="url(#core-face)"/>
+  <g fill="none" stroke="#242424" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="287" y="222" width="26" height="26" rx="5"/>
+    <path d="M295 222v-5m10 5v-5m-10 31v5m10-5v5m-18-23h-5m5 10h-5m31-10h5m-5 10h5m-23-8 5 4-5 4m8 0h4"/>
+  </g>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#202020">
+    <text x="300" y="284" font-size="25" font-weight="500" letter-spacing="-.8">Agentic core</text>
+    <text x="300" y="307" font-size="15">AI orchestration</text>
+    <path d="M233 321h134" stroke="#8d8d8d" stroke-opacity=".65"/>
+    <text x="300" y="342" font-size="13">Context → action</text>
+  </g>
+  <g fill="url(#node-face)" stroke="#9b9b9b" stroke-opacity=".55">
+    <rect x="12" y="155" width="154" height="64" rx="9"/>
+    <rect x="12" y="251" width="154" height="64" rx="9"/>
+    <rect x="12" y="347" width="154" height="64" rx="9"/>
+    <rect x="434" y="155" width="154" height="64" rx="9"/>
+    <rect x="434" y="251" width="154" height="64" rx="9"/>
+    <rect x="434" y="347" width="154" height="64" rx="9"/>
+  </g>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19.5" fill="#ececec">
+    <text x="59" y="194">CRM</text>
+    <text x="59" y="290">Email</text>
+    <text x="55" y="386">Documents</text>
+    <text x="479" y="194">Support</text>
+    <text x="479" y="290">Finance</text>
+    <text x="475" y="386">Operations</text>
+  </g>
+  <g fill="none" stroke="#dcdcdc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="36" cy="182" r="5"/><path d="M27 198v-2a9 9 0 0 1 18 0v2m-2-21a5 5 0 0 1 0 10"/>
+    <rect x="25" y="275" width="23" height="16" rx="2"/><path d="m26 276 10.5 8 10.5-8"/>
+    <path d="M27 368h12l7 7v16H27Zm12 0v7h7m-14 5h9m-9 5h9"/>
+    <path d="M448 188v-4a11 11 0 0 1 22 0v4m-22-4h5v10h-5Zm22 0h-5v10h5Zm0 10v4h-10"/>
+    <rect x="450" y="271" width="19" height="24" rx="2"/><path d="M455 277h9m-9 6h3m5 0h1m-9 6h3m5 0h1"/>
+    <rect x="448" y="369" width="9" height="9" rx="1.5"/><rect x="461" y="382" width="9" height="9" rx="1.5"/><path d="M461 373h5v5m-9 9h-5v-5"/>
+  </g>
+  <g font-family="Consolas, Liberation Mono, monospace" text-anchor="middle" fill="#bdbdbd">
+    <text x="300" y="459" font-size="12" letter-spacing="1.1">YOUR TOOLS. ONE CONNECTED WORKFLOW.</text>
+  </g>
+</svg>

@@ -1,1 +1,6 @@
 .vercel
+node_modules
+lead-generation/
+business-development-audit-*.md
+tmp/
+output/

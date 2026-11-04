@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blacksquarelabs.dev/sitemap.xml

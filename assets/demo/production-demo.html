@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senior engineering for AI projects — Blacksquare Labs</title>
+<style>
+:root{--paper:#f0f0eb;--ink:#1c1e1c;--muted:#71756c;--line:#d3d6cb;--board:#181c19;--soft:#a8b1a3;--green:#c7d8b1;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased}#film{position:relative;width:1440px;height:900px;overflow:hidden;background:radial-gradient(ellipse at 10% 100%,#dedfd6 0,transparent 50%),var(--paper);padding:40px 48px}.mast{height:72px;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--line)}.mast img{width:232px;height:44px}.mono{font:15px/1.5 var(--mono);letter-spacing:.045em}.mast .mono{padding-top:12px;color:var(--muted)}.scene{position:absolute;inset:150px 48px 125px;display:grid;grid-template-columns:360px 1fr;gap:44px;align-items:center;opacity:0;pointer-events:none}.eyebrow{font:16px var(--mono);color:var(--muted);letter-spacing:.05em}.intro h1{font-size:64px;font-weight:450;letter-spacing:-.065em;line-height:1.015;margin:28px 0 25px}.intro p{font-size:23px;line-height:1.45;color:var(--muted);margin:0;max-width:335px}.annotation{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);font:14px/1.6 var(--mono);color:var(--muted)}.board{height:590px;border-radius:20px;background:var(--board);color:#f1f4eb;border:1px solid #353d34;box-shadow:0 22px 45px #2c31291a;overflow:hidden;position:relative}.board-head{height:68px;padding:0 28px;border-bottom:1px solid #ffffff1c;display:flex;justify-content:space-between;align-items:center;font:15px var(--mono);color:#b2bcab}.status{display:inline-flex;align-items:center;gap:9px;color:var(--green);font:13px var(--mono);letter-spacing:.035em}.status:before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor}.neutral{color:#b4b9b1}.board-body{padding:30px}.tag{display:inline-block;border:1px solid #ffffff25;padding:7px 11px;border-radius:6px;font:13px var(--mono);color:#b8c1b1}.label{font:14px/1.5 var(--mono);color:#9ba694;letter-spacing:.045em}.question{font-size:27px;line-height:1.4;letter-spacing:-.02em;border:1px solid #ffffff20;background:#ffffff05;border-radius:12px;padding:22px 25px;margin:19px 0 20px}.answer{background:#f0f2ea;color:#22271e;padding:26px;border-radius:12px;margin:16px 0}.answer p{font-size:25px;line-height:1.45;margin:12px 0 20px;letter-spacing:-.02em}.source{font:13px var(--mono);color:#68725e;border-top:1px solid #ced4c3;padding-top:15px}.bottom-note{position:absolute;bottom:25px;left:30px;right:30px;padding-top:19px;border-top:1px solid #ffffff1c;font:15px/1.45 var(--mono);color:var(--soft)}.table-head,.case{display:grid;grid-template-columns:1fr 1.15fr 108px;gap:20px;align-items:center}.table-head{padding:3px 0 18px;font:13px var(--mono);color:#a6b29e;border-bottom:1px solid #ffffff26}.case{min-height:94px;border-bottom:1px solid #ffffff16;font-size:20px}.case .expect{font-size:18px;color:#acb6a5}.case .result{justify-self:end;font:14px var(--mono);color:var(--green);padding:7px 10px;border:1px solid #c7d8b134;border-radius:5px}.case .result.fail{color:#e5bc99;border-color:#e5bc9944}.fix{margin-top:28px;display:flex;align-items:center;gap:14px;font-size:20px;color:#d5e4c4}.fix .tick{width:31px;height:31px;border:1px solid #849773;border-radius:50%;display:grid;place-items:center}.network{height:390px;position:relative;margin:22px 30px}.network svg{position:absolute;width:100%;height:100%;inset:0}.wire{fill:none;stroke:#7f8e74;stroke-width:1.5}.pulse{fill:none;stroke:#d3e9b9;stroke-width:3;stroke-dasharray:16 540}.node{position:absolute;width:232px;border:1px solid #ffffff26;background:#20271f;border-radius:12px;padding:20px 23px}.node strong{display:block;font-size:23px;font-weight:500;margin-top:8px;letter-spacing:-.035em}.node small{display:block;font-size:16px;color:#a3b097;margin-top:9px}.node.core{width:262px;left:290px;top:136px;background:#e8eedf;color:#283022;border:1px solid #cbd7be}.node.core .label{color:#64705a}.node.core small{color:#69755e}.knowledge{left:0;top:12px}.ticket{right:0;top:12px}.permission{left:0;bottom:4px}.human{right:0;bottom:4px}.network .label{font-size:12px}.deploy-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.release{font-size:34px;letter-spacing:-.04em}.gates{display:flex;gap:9px;margin-bottom:28px}.gate{flex:1;border:1px solid #ffffff25;border-radius:8px;padding:13px 12px;color:#c7d8b1;font:14px var(--mono)}.rollout{border:1px solid #ffffff2c;border-radius:13px;padding:23px;background:#ffffff04}.rollout-head{display:flex;justify-content:space-between;align-items:baseline;font-size:22px}.rollout-head strong{font-size:65px;letter-spacing:-.06em;font-weight:450}.meter{height:9px;background:#ffffff15;border-radius:12px;margin:19px 0 15px;overflow:hidden}.meter i{display:block;width:0;height:100%;background:#c7d8b1}.scale{display:flex;justify-content:space-between;color:#a4b099;font:13px var(--mono)}.rollback{display:flex;justify-content:space-between;padding-top:24px;font:14px var(--mono);color:#b5bfac}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{border:1px solid #ffffff21;border-radius:9px;padding:18px 16px;background:#ffffff03}.metric strong{font-size:23px;font-weight:450;display:block;margin-top:12px;letter-spacing:-.035em}.chart{height:140px;margin:25px 0 19px;border-bottom:1px solid #ffffff22;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 45px,#ffffff0c 46px,transparent 47px)}.chart svg{width:100%;height:100%}.chart polyline{fill:none;stroke:#c7d8b1;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.event{display:flex;gap:15px;align-items:center;border:1px solid #ffffff22;border-radius:9px;padding:16px 18px;font-size:19px}.event i{width:8px;height:8px;background:#d9bda1;border-radius:50%}.event small{color:#a8b3a0;font:13px var(--mono);margin-left:auto}.outro{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--paper);inset:130px 48px 119px}.outro .eyebrow{font-size:16px}.outro h1{font-size:96px;line-height:1;letter-spacing:-.065em;font-weight:440;margin:32px 0 28px}.outro p{font-size:28px;color:var(--muted);margin:0}.outro .end-mark{margin-top:45px;padding:13px 21px;background:var(--ink);color:var(--paper);border-radius:30px;font:16px var(--mono)}.timeline{position:absolute;bottom:35px;left:48px;right:48px;display:flex;gap:0;border-top:1px solid #c9cfc0;padding-top:22px;justify-content:space-between}.timeline span{color:#838b7b;font:16px var(--mono);display:flex;gap:13px;align-items:center}.timeline b{font-size:12px;display:grid;place-items:center;width:27px;height:27px;border:1px solid #c9cfc0;border-radius:50%;font-weight:400}.timeline .active{color:#20281c}.timeline .active b{color:#edf2e6;background:#2b3325;border-color:#2b3325}.timeline .done b{background:#dfe5d6;border-color:#b6c1aa;color:#334029}.progress{position:absolute;top:-2px;left:0;height:2px;background:#414e37;width:0}.scene [data-at]{will-change:transform,opacity}.film-control{position:fixed;right:18px;bottom:12px;border:1px solid #bbb;background:#f0f0eb;padding:9px 14px;border-radius:20px;cursor:pointer;z-index:10}body.render .film-control{display:none}
+</style>
+</head>
+<body>
+<main id="film" aria-label="Illustration of AI prototype development, testing, integration and deployment">
+  <header class="mast"><img src="../brand-lockup.svg" alt="Blacksquare Labs"><span class="mono">AI DEVELOPMENT &nbsp; / &nbsp; ILLUSTRATIVE SUPPORT ASSISTANT</span></header>
+  <section class="scene" data-stage="Prototype">
+    <div class="intro"><div class="eyebrow">01 / PROOF OF CONCEPT</div><h1>Build a<br>proof of<br>concept</h1><p>A small assistant answers policy questions from sample documents.</p><div class="annotation">PRODUCT / SUPPORT ASSISTANT<br>FIRST BUILD / PROOF OF CONCEPT</div></div>
+    <div class="board"><div class="board-head"><span>support-assistant / first build</span><span class="status neutral" id="poc-status">Use case defined</span></div><div class="board-body"><div class="label" data-at=".3">USE CASE / ANSWERING POLICY QUESTIONS</div><div class="question" data-at=".65">What is our equipment return policy?</div><div class="answer" data-at="1.6"><span class="label" style="color:#64705a">PROTOTYPE / DRAFT ANSWER</span><p>Return the equipment within 30 days.<br>Include the original order reference.</p><div class="source">SOURCE / sample-policy.pdf · page 4</div></div><div class="tag" data-at="2.5">Sample data &nbsp;·&nbsp; One workflow</div></div><div class="bottom-note" data-at="3.1">The prototype uses sample data and needs further testing.</div></div>
+  </section>
+  <section class="scene" data-stage="Evaluate">
+    <div class="intro"><div class="eyebrow">02 / TESTING</div><h1>Test the<br>prototype</h1><p>Check answers, missing information and restricted data before release.</p><div class="annotation">CHECK / EXPECTED BEHAVIOR<br>DECISION / FIX, THEN RERUN</div></div>
+    <div class="board"><div class="board-head"><span>support-assistant / test suite</span><span class="status" id="eval-status">Review in progress</span></div><div class="board-body"><div class="table-head"><span>SCENARIO</span><span>EXPECTED BEHAVIOR</span><span>RESULT</span></div><div class="case" data-at=".3"><span>Known policy</span><span class="expect">Answer with source</span><span class="result">PASS</span></div><div class="case" data-at=".7"><span>Missing source</span><span class="expect">Ask for review</span><span class="result">PASS</span></div><div class="case" data-at="1.1"><span>Restricted data</span><span class="expect">Respect access rules</span><span class="result fail" id="access-result">FAIL</span></div><div class="fix" id="evaluation-fix"><span class="tick">✓</span><span>Permission boundary enforced. Checks rerun.</span></div></div><div class="bottom-note">Run these checks before each release.</div></div>
+  </section>
+  <section class="scene" data-stage="Integrate">
+    <div class="intro"><div class="eyebrow">03 / INTEGRATION</div><h1>Connect data<br>and tools</h1><p>Add company data, permissions and connections to existing software.</p><div class="annotation">ACCESS / REQUIRED PERMISSIONS ONLY<br>UNCERTAINTY / HUMAN REVIEW</div></div>
+    <div class="board"><div class="board-head"><span>support-assistant / connected systems</span><span class="status">Permissions enforced</span></div><div class="network"><svg viewBox="0 0 876 390" preserveAspectRatio="none" aria-hidden="true"><path class="wire" d="M232 77H275Q300 77 300 102V197H290 M232 318H265Q300 318 300 290V197 M552 197H570V102Q570 77 597 77H644 M552 197H570V290Q570 318 597 318H644"/><path class="pulse" id="flow-pulse" d="M232 77H275Q300 77 300 102V197H552H570V102Q570 77 597 77H644"/></svg><div class="node knowledge" data-at=".15"><div class="label">01 / READ</div><strong>Approved knowledge</strong><small>Sources with access rules</small></div><div class="node permission" data-at=".5"><div class="label">02 / AUTHORIZE</div><strong>User permissions</strong><small>Check every request</small></div><div class="node core" data-at=".9"><div class="label">03 / EXECUTE</div><strong>Support assistant</strong><small>Validate every output</small></div><div class="node ticket" data-at="1.3"><div class="label">04 / CONNECT</div><strong>Support system</strong><small>Approved actions only</small></div><div class="node human" data-at="1.7"><div class="label">05 / ESCALATE</div><strong>Human review</strong><small>Review uncertain answers</small></div></div><div class="bottom-note">The assistant uses approved data and tools with access checks.</div></div>
+  </section>
+  <section class="scene" data-stage="Deploy">
+    <div class="intro"><div class="eyebrow">04 / PRODUCTION</div><h1>Deploy<br>in stages</h1><p>Release to a small group first. Increase usage after review.</p><div class="annotation">RELEASE / CONTROLLED ROLLOUT<br>RECOVERY / ROLLBACK READY</div></div>
+    <div class="board"><div class="board-head"><span>deployment / production</span><span class="status" id="deploy-status">Release checks passed</span></div><div class="board-body"><div class="deploy-top"><span class="release">Support assistant</span><span class="tag">RELEASE / v1.0</span></div><div class="gates" data-at=".2"><div class="gate">✓ Quality checks</div><div class="gate">✓ Access rules</div><div class="gate">✓ Recovery path</div></div><div class="rollout" data-at=".55"><div class="rollout-head"><span>Production traffic</span><strong id="traffic-value">5%</strong></div><div class="meter"><i id="traffic-meter"></i></div><div class="scale"><span>5% / INITIAL</span><span>25% / REVIEW</span><span>100% / RELEASE</span></div></div><div class="rollback" data-at="1.1"><span>Previous version retained</span><span>↶ Rollback available</span></div></div><div class="bottom-note">Illustrative rollout · Each increase follows a review.</div></div>
+  </section>
+  <section class="scene" data-stage="Operate">
+    <div class="intro"><div class="eyebrow">05 / MAINTENANCE</div><h1>Monitor<br>and update</h1><p>Track quality, speed and running costs. Add tests for new failures.</p><div class="annotation">FEEDBACK / NEW FAILURES → TESTS<br>OWNERSHIP / YOUR TEAM</div></div>
+    <div class="board"><div class="board-head"><span>support-assistant / production health</span><span class="status">Monitoring active</span></div><div class="board-body"><div class="metrics" data-at=".2"><div class="metric"><div class="label">QUALITY</div><strong>Checks tracked</strong></div><div class="metric"><div class="label">LATENCY</div><strong>Limits watched</strong></div><div class="metric"><div class="label">COST / TASK</div><strong>Budget tracked</strong></div></div><div class="chart" data-at=".5"><svg viewBox="0 0 870 140" preserveAspectRatio="none" aria-label="Illustrative activity trace"><polyline id="trace" points="0,97 35,97 50,78 70,92 110,91 126,64 147,83 198,83 220,63 250,84 295,84 319,57 344,77 390,77 421,48 445,82 494,82 520,63 544,81 592,81 610,35 635,82 680,82 704,57 728,77 772,77 795,64 818,78 870,78"/></svg></div><div class="event" data-at="1.6"><i id="event-dot"></i><span id="event-text">Tool timeout detected</span><small id="event-state">INVESTIGATE</small></div></div><div class="bottom-note" id="operations-note">Monitoring records failures for investigation.</div></div>
+  </section>
+  <section class="scene outro" data-stage="Production"><div class="eyebrow">BLACKSQUARE LABS</div><h1>Senior engineering<br>for AI projects</h1><p>Prototype development, evaluation, integration and ongoing maintenance.</p><div class="end-mark">blacksquarelabs.dev &nbsp;↗</div></section>
+  <footer class="timeline"><div class="progress" id="progress"></div><span><b>01</b>Prototype</span><span><b>02</b>Testing</span><span><b>03</b>Integration</span><span><b>04</b>Deployment</span><span><b>05</b>Maintenance</span></footer>
+</main>
+<button class="film-control" type="button" id="playback">Pause animation</button>
+<script>
+const scenes = [...document.querySelectorAll('.scene')];
+const steps = [...document.querySelectorAll('.timeline span')];
+const clamp = n => Math.max(0, Math.min(1, n));
+const ease = n => 1 - Math.pow(1 - clamp(n), 3);
+const $ = id => document.getElementById(id);
+window.renderDemo = function(t) {
+  t = Math.max(0, Math.min(39.999, t));
+  const stage = Math.min(5, Math.floor(t / 7));
+  document.getElementById('film').dataset.stage = scenes[stage].dataset.stage;
+  scenes.forEach((scene, i) => {
+    const local = t - i * 7;
+    const enter = ease(local / .65);
+    const leave = i < 5 ? ease((local - 6.6) / .4) : 0;
+    scene.style.opacity = local < 0 || (i < 5 && local >= 7) ? 0 : enter * (1 - leave);
+    scene.style.transform = `translateY(${(1 - enter) * 18 - leave * 7}px)`;
+    scene.querySelectorAll('[data-at]').forEach(el => {
+      const progress = ease((local - Number(el.dataset.at)) / .6);
+      el.style.opacity = progress;
+      el.style.transform = `translateY(${(1 - progress) * 13}px)`;
+    });
+  });
+  steps.forEach((step,i) => { step.className = i === stage || stage === 5 ? 'active' : i < stage ? 'done' : ''; });
+  $('progress').style.width = `${t / 40 * 100}%`;
+  $('poc-status').textContent = t >= 1.8 ? 'Prototype running' : 'Use case defined';
+  $('poc-status').className = t >= 1.8 ? 'status' : 'status neutral';
+  const fixed = t >= 11.1;
+  $('access-result').textContent = fixed ? 'PASS' : 'FAIL';
+  $('access-result').className = `result${fixed ? '' : ' fail'}`;
+  $('eval-status').textContent = fixed ? 'Checks rerun · passed' : 'Review in progress';
+  $('evaluation-fix').style.opacity = ease((t - 10.8) / .6);
+  $('flow-pulse').style.strokeDashoffset = -(t - 14) * 110;
+  const deployTime = t - 21;
+  const traffic = deployTime < 2 ? 5 : deployTime < 4.2 ? 25 : 100;
+  $('traffic-value').textContent = `${traffic}%`;
+  const previous = traffic === 100 ? 25 : traffic === 25 ? 5 : 0;
+  const changeAt = traffic === 100 ? 4.2 : traffic === 25 ? 2 : .5;
+  $('traffic-meter').style.width = `${previous + (traffic - previous) * ease((deployTime - changeAt) / .7)}%`;
+  $('deploy-status').textContent = traffic === 100 ? 'Rollout complete' : 'Release checks passed';
+  $('trace').style.strokeDasharray = '1200';
+  $('trace').style.strokeDashoffset = 1200 * (1 - clamp((t - 28.6) / 2.2));
+  const recovered = t >= 31.3;
+  $('event-text').textContent = recovered ? 'Fallback used · sent to human review' : 'Tool timeout detected';
+  $('event-state').textContent = recovered ? 'HANDLED' : 'INVESTIGATE';
+  $('event-dot').style.background = recovered ? '#c7d8b1' : '#d9bda1';
+  $('operations-note').textContent = t >= 32.5 ? 'The timeout case is added to tests for the next release.' : 'Monitoring records failures for investigation.';
+};
+const rendering = new URLSearchParams(location.search).has('render');
+document.body.classList.toggle('render', rendering);
+let playing = !rendering && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+let elapsed = 0, last = performance.now();
+window.renderDemo(rendering ? 2.8 : 0.8);
+const playback = $('playback');
+playback.textContent = playing ? 'Pause animation' : 'Play animation';
+playback.addEventListener('click', () => { playing = !playing; last = performance.now(); playback.textContent = playing ? 'Pause animation' : 'Play animation'; });
+if (!rendering) requestAnimationFrame(function tick(now) { if (playing) { elapsed += (now - last) / 1000; window.renderDemo(elapsed % 40); } last = now; requestAnimationFrame(tick); });
+</script>
+</body>
+</html>

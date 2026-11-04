@@ -1,0 +1,18 @@
+{
+  "name": "blacksquare-labs",
+  "version": "1.0.0",
+  "description": "Prepare an AI visibility consultation brief with Blacksquare Labs.",
+  "author": {
+    "name": "Blacksquare Labs"
+  },
+  "interface": {
+    "displayName": "Blacksquare Labs",
+    "shortDescription": "Prepare a focused AI visibility consultation brief.",
+    "longDescription": "Answer a short set of questions about your business, ideal customer, market, and desired AI journey. Blacksquare Labs turns those answers into a concise consultation brief and directs you to a reviewable call-planning flow.",
+    "developerName": "Blacksquare Labs",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me prepare for an AI visibility consultation with Blacksquare Labs."
+  },
+  "mcpServers": "./.mcp.json"
+}

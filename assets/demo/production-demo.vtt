@@ -1,0 +1,35 @@
+WEBVTT
+
+00:00.000 --> 00:01.800
+The example use case is answering support policy questions.
+
+00:01.800 --> 00:07.000
+Build a proof of concept that answers from a sample document.
+The prototype needs further testing before deployment.
+
+00:07.000 --> 00:11.100
+Test answers, missing sources and restricted data.
+The access check fails for restricted data.
+
+00:11.100 --> 00:14.000
+Enforce the permission boundary and rerun the tests.
+
+00:14.000 --> 00:21.000
+Connect approved company data, user permissions and support tools.
+Send uncertain answers to human review.
+
+00:21.000 --> 00:28.000
+Deploy to a small group, then increase usage after review.
+Keep the previous version available for rollback. This rollout is illustrative.
+
+00:28.000 --> 00:31.300
+Monitor answer quality, response speed and running costs.
+A tool timeout is detected.
+
+00:31.300 --> 00:35.000
+Use the fallback and send the request to human review.
+Add the timeout case to tests for the next release.
+
+00:35.000 --> 00:40.000
+Blacksquare Labs: Senior engineering for AI projects.
+Prototype development, evaluation, integration and ongoing maintenance.
