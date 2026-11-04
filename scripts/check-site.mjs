@@ -5,7 +5,7 @@ const browser = await chromium.launch({channel:'chrome', headless:true});
 try {
 const page = await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
-const routes=['/','/technical-review','/projects','/fractional-ai-engineer','/for-agencies','/work','/work/demo-vs-production','/writing','/writing/production-readiness','/scorecard','/about','/contact','/privacy','/terms','/cookies','/quote-demo'];
+const routes=['/','/technical-review','/projects','/fractional-ai-engineer','/for-agencies','/work','/work/demo-vs-production','/writing','/writing/production-readiness','/scorecard','/about','/contact','/privacy','/terms','/cookies','/quote-demo','/fr/','/fr/audit-ia','/fr/agence-automatisation-ia','/fr/contact'];
 for (const width of [1440,390]) {
  await page.setViewportSize({width,height:1000});
  for(const route of routes){

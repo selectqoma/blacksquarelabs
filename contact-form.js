@@ -1,3 +1,7 @@
+const fr = document.documentElement?.lang === "fr";
+const text = fr
+  ? { sending: "Envoi…", sendingStatus: "Envoi de votre demande…", failed: "Nous n’avons pas pu confirmer l’envoi de votre demande. Votre message est toujours là : réessayez ou écrivez-nous à l’adresse indiquée sur cette page.", accepted: "Merci. Votre demande a bien été reçue. Nous l’examinons et vous répondrons par e-mail pour convenir de la suite. Aucun rendez-vous n’est encore fixé." }
+  : { sending: "Sending…", sendingStatus: "Sending your request…", failed: "I could not confirm your request was sent. Your message is still here; retry or email me using the address on this page.", accepted: "Thank you. Your request has been accepted. I’ll review it and reply by email to discuss the next step. No meeting has been booked yet." };
 document.querySelectorAll("[data-contact-form]").forEach((form) => {
   const button = form.querySelector("button[type='submit']");
   const status = form.querySelector("[data-form-status]");
@@ -13,9 +17,9 @@ document.querySelectorAll("[data-contact-form]").forEach((form) => {
     fields.request_id = requestId;
     const controls = Array.from(form.elements).filter((control) => !control.disabled);
     controls.forEach((control) => { control.disabled = true; });
-    button.textContent = "Sending…";
+    button.textContent = text.sending;
     form.setAttribute("aria-busy", "true");
-    status.textContent = "Sending your request…";
+    status.textContent = text.sendingStatus;
     try {
       const response = await fetch(form.action, {
         method: "POST",
@@ -24,15 +28,15 @@ document.querySelectorAll("[data-contact-form]").forEach((form) => {
         signal: AbortSignal.timeout(15000),
       });
       const result = await response.json().catch(() => null);
-      if (!response.ok || result?.status !== "accepted") throw new Error(result?.error || "I could not confirm your request was sent. Your message is still here; retry or email me using the address on this page.");
-      status.textContent = "Thank you. Your request has been accepted. I’ll review it and reply by email to discuss the next step. No meeting has been booked yet.";
+      if (!response.ok || result?.status !== "accepted") throw new Error(result?.error || text.failed);
+      status.textContent = text.accepted;
       form.reset();
       requestId = undefined;
       document.getElementById("intakeReady")?.setAttribute("hidden", "");
       try { globalThis.bslTrack?.("form_submitted", { source: fields.source }); } catch (_) {}
     } catch (error) {
       status.textContent = error.name === "TimeoutError" || error instanceof TypeError
-        ? "I could not confirm your request was sent. Your message is still here; retry or email me using the address on this page."
+        ? text.failed
         : error.message;
     } finally {
       controls.forEach((control) => { control.disabled = false; });

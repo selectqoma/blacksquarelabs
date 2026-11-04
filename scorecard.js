@@ -79,7 +79,7 @@ export function renderScorecard() {
         <aside class="scorecard-result">
           <div data-scorecard-result role="status" aria-live="polite" aria-atomic="true">${renderResult(scoreAnswers())}</div>
           <button class="button button-secondary" type="button" data-scorecard-print>Print / save as PDF</button>
-          <a class="button" href="/technical-review">See the technical review <span aria-hidden="true">↗</span></a>
+          <a class="button" href="/technical-review">See the AI audit <span aria-hidden="true">↗</span></a>
         </aside>
       </div>
     </div>
