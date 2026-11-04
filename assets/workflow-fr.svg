@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1942 809" role="img" aria-labelledby="title description">
+  <title id="title">A working system — weekly client brief</title>
+  <desc id="description">An illustrative workflow. Client activity from a CRM, project documents and email conversations feed an agentic workflow that gathers context, plans a brief and prepares a draft. The draft is checked against its sources and submitted for human review before sending.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#20211f" opacity="0.08"/>
+    </pattern>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 8 4 0 8Z" fill="#20211f"/>
+    </marker>
+    <marker id="light-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 7 3.5 0 7Z" fill="#b9bcb0"/>
+    </marker>
+  </defs>
+
+  <path fill="#f5f4f0" d="M0 0h1942v809H0z"/>
+  <path fill="url(#grid)" d="M72 190h1798v480H72z"/>
+
+  <g fill="#20211f" font-family="Arial, Helvetica, sans-serif">
+    <path d="M96 71h1750" fill="none" stroke="#20211f" stroke-width="1"/>
+    <path d="M96 42h11v11H96z"/>
+    <g font-family="'Courier New', monospace" font-size="13" letter-spacing="1">
+      <text x="121" y="52">BLACKSQUARE LABS</text>
+      <text x="1846" y="52" text-anchor="end">ÉTUDE DE SYSTÈME / 01</text>
+    </g>
+
+    <text x="92" y="162" font-size="55" letter-spacing="-2.1">Un système en production</text>
+    <text x="1846" y="160" font-family="'Courier New', monospace" font-size="14" text-anchor="end" letter-spacing="0.6">EXEMPLE / POINT CLIENT HEBDOMADAIRE</text>
+
+    <g font-family="'Courier New', monospace" font-size="14" letter-spacing="0.4">
+      <text x="96" y="233">01 / SOURCES</text>
+      <text x="615" y="233">02 / PROCESSUS AGENTIQUE</text>
+      <text x="1430" y="233">03 / LIVRAISON &amp; VALIDATION</text>
+    </g>
+    <g stroke="#b8bab0" stroke-width="1">
+      <path d="M96 251h453M615 251h716M1430 251h416"/>
+    </g>
+
+    <g font-family="'Courier New', monospace" font-size="14" letter-spacing="0.7" fill="#64665d">
+      <text x="96" y="319">CRM</text>
+      <text x="96" y="434">DOCUMENTS</text>
+      <text x="96" y="549">E-MAIL</text>
+    </g>
+    <g font-size="30" letter-spacing="-0.7">
+      <text x="94" y="353">Activité client</text>
+      <text x="94" y="468">Contexte du projet</text>
+      <text x="94" y="583">Derniers échanges</text>
+    </g>
+
+    <g fill="none" stroke="#20211f" stroke-width="1.35">
+      <path d="M430 348h119v115h59" marker-end="url(#arrow)"/>
+      <path d="M430 463h119M430 578h119V463"/>
+      <path d="M417 342h12v12h-12zM417 457h12v12h-12zM417 572h12v12h-12z" fill="#f5f4f0"/>
+    </g>
+    <path d="M545 459h8v8h-8z"/>
+
+    <path fill="#20211f" d="M615 276h716v364H615z"/>
+    <g fill="#f5f4f0">
+      <text x="651" y="328" font-size="34" letter-spacing="-1">Préparer le point hebdo</text>
+      <text x="652" y="357" font-size="17" fill="#b9bcb0">Dans vos outils. À partir de vos données.</text>
+      <path d="M651 383h644" fill="none" stroke="#5b5e55" stroke-width="1"/>
+
+      <g font-size="27" letter-spacing="-0.5">
+        <text x="652" y="434">Contexte</text>
+        <text x="878" y="434">Planifier</text>
+        <text x="1104" y="434">Action</text>
+      </g>
+      <g font-size="18" fill="#b9bcb0">
+        <text x="652" y="473">Sélectionner les fiches</text>
+        <text x="652" y="499">et l’historique utiles.</text>
+        <text x="878" y="473">Repérer les changements.</text>
+        <text x="878" y="499">Structurer le point.</text>
+        <text x="1104" y="473">Rédiger un brouillon.</text>
+        <text x="1104" y="499">Joindre les sources.</text>
+      </g>
+
+      <g fill="none" stroke="#b9bcb0" stroke-width="1.2">
+        <path d="M615 463h18v90h19"/>
+        <path d="M672 553h190" marker-end="url(#light-arrow)"/>
+        <path d="M898 553h190" marker-end="url(#light-arrow)"/>
+        <path d="M1124 553h207"/>
+      </g>
+      <path fill="#b9bcb0" d="M652 543h20v20h-20zM878 543h20v20h-20z"/>
+      <path fill="#9aa378" d="M1104 543h20v20h-20z"/>
+      <g font-family="'Courier New', monospace" font-size="13" fill="#b9bcb0" letter-spacing="0.4">
+        <text x="652" y="602">LIRE</text>
+        <text x="878" y="602">RAISONNER</text>
+        <text x="1104" y="602">PRÉPARER</text>
+      </g>
+    </g>
+
+    <g fill="none" stroke="#20211f" stroke-width="1.35">
+      <path d="M1331 553h47V348h44" marker-end="url(#arrow)"/>
+      <path d="M1430 358v86" marker-end="url(#arrow)"/>
+      <path d="M1430 473v86" marker-end="url(#arrow)"/>
+    </g>
+    <path fill="#8d976b" d="M1423 341h14v14h-14z"/>
+    <path d="M1423 456h14v14h-14z"/>
+    <path fill="#f5f4f0" stroke="#20211f" stroke-width="1.35" d="M1423 571h14v14h-14z"/>
+
+    <g font-size="30" letter-spacing="-0.6">
+      <text x="1471" y="352">Brouillon du point</text>
+      <text x="1471" y="467">Vérifier les sources</text>
+      <text x="1471" y="582">Validation humaine</text>
+    </g>
+    <g font-size="18" fill="#64665d">
+      <text x="1472" y="381">Une synthèse courte et sourcée.</text>
+      <text x="1472" y="496">Relier chaque fait à sa source.</text>
+      <text x="1472" y="611">Valider avant l’envoi.</text>
+    </g>
+
+    <path d="M96 689h1750" fill="none" stroke="#b8bab0" stroke-width="1"/>
+    <text x="96" y="721" font-size="15" fill="#64665d">Exemple de processus, adapté à votre équipe, vos outils et vos règles de validation.</text>
+    <text x="1846" y="721" text-anchor="end" font-family="'Courier New', monospace" font-size="13" letter-spacing="0.5">CONTEXTE → ACTION → CONTRÔLE</text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="1008" viewBox="0 0 420 1008" role="img" aria-labelledby="title description">
+  <title id="title">A working system — weekly client brief</title>
+  <desc id="description">An illustrative workflow. Client activity from a CRM, project documents and email conversations feed an agentic workflow that gathers context, plans a brief and prepares a draft. The draft is checked against its sources and submitted for human review before sending.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 7 3.5 0 7Z" fill="#20211f"/>
+    </marker>
+    <marker id="light-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 7 3.5 0 7Z" fill="#b9bcb0"/>
+    </marker>
+  </defs>
+
+  <path fill="#f5f4f0" d="M0 0h420v1008H0z"/>
+  <g fill="#20211f" font-family="Arial, Helvetica, sans-serif">
+    <text x="24" y="31" font-family="'Courier New', monospace" font-size="17">01 / SOURCES</text>
+    <path d="M24 45h372" fill="none" stroke="#b8bab0" stroke-width="1"/>
+
+    <g font-family="'Courier New', monospace" font-size="17" fill="#64665d">
+      <text x="24" y="75">CRM</text>
+      <text x="24" y="139">DOCUMENTS</text>
+      <text x="24" y="203">E-MAIL</text>
+    </g>
+    <g font-size="24" letter-spacing="-0.5">
+      <text x="23" y="103">Activité client</text>
+      <text x="23" y="167">Contexte du projet</text>
+      <text x="23" y="231">Derniers échanges</text>
+    </g>
+    <g fill="none" stroke="#20211f" stroke-width="1.25">
+      <path d="M346 95h30v158H210v18" marker-end="url(#arrow)"/>
+      <path d="M346 159h30M346 223h30"/>
+      <path d="M334 89h12v12h-12zM334 153h12v12h-12zM334 217h12v12h-12z" fill="#f5f4f0"/>
+    </g>
+
+    <path fill="#20211f" d="M24 278h372v400H24z"/>
+    <g fill="#f5f4f0">
+      <text x="48" y="312" font-family="'Courier New', monospace" font-size="17" fill="#b9bcb0">02 / PROCESSUS AGENTIQUE</text>
+      <text x="47" y="349" font-size="26" letter-spacing="-0.6">Préparer le point hebdo</text>
+      <text x="48" y="376" font-size="17" fill="#b9bcb0">Dans vos outils. À partir de vos données.</text>
+      <path d="M48 394h324" fill="none" stroke="#5b5e55" stroke-width="1"/>
+
+      <g font-size="24" letter-spacing="-0.4">
+        <text x="84" y="429">Contexte</text>
+        <text x="84" y="511">Planifier</text>
+        <text x="84" y="593">Action</text>
+      </g>
+      <g font-size="18" fill="#b9bcb0">
+        <text x="84" y="456">Sélectionner les fiches</text>
+        <text x="84" y="478">et l’historique utiles.</text>
+        <text x="84" y="538">Repérer les changements.</text>
+        <text x="84" y="560">Structurer le point.</text>
+        <text x="84" y="620">Rédiger un brouillon.</text>
+        <text x="84" y="642">Joindre les sources.</text>
+      </g>
+      <g fill="none" stroke="#b9bcb0" stroke-width="1.2">
+        <path d="M54 429v61" marker-end="url(#light-arrow)"/>
+        <path d="M54 511v61" marker-end="url(#light-arrow)"/>
+        <path d="M54 593v85"/>
+      </g>
+      <path fill="#b9bcb0" d="M46 413h16v16H46zM46 495h16v16H46z"/>
+      <path fill="#9aa378" d="M46 577h16v16H46z"/>
+    </g>
+
+    <text x="84" y="718" font-family="'Courier New', monospace" font-size="17">03 / LIVRAISON &amp; VALIDATION</text>
+    <g fill="none" stroke="#20211f" stroke-width="1.25">
+      <path d="M54 678v67" marker-end="url(#arrow)"/>
+      <path d="M54 765v53" marker-end="url(#arrow)"/>
+      <path d="M54 838v53" marker-end="url(#arrow)"/>
+    </g>
+    <path fill="#8d976b" d="M46 749h16v16H46z"/>
+    <path d="M46 822h16v16H46z"/>
+    <path fill="#f5f4f0" stroke="#20211f" stroke-width="1.25" d="M46 895h16v16H46z"/>
+    <g font-size="24" letter-spacing="-0.4">
+      <text x="84" y="765">Brouillon du point</text>
+      <text x="84" y="838">Vérifier les sources</text>
+      <text x="84" y="911">Validation humaine</text>
+    </g>
+    <g font-size="18" fill="#64665d">
+      <text x="84" y="791">Une synthèse courte et sourcée.</text>
+      <text x="84" y="864">Relier chaque fait à sa source.</text>
+      <text x="84" y="937">Valider avant l’envoi.</text>
+    </g>
+    <path d="M24 962h372" fill="none" stroke="#b8bab0" stroke-width="1"/>
+    <text x="24" y="989" font-size="17" fill="#64665d">Exemple de processus. Vos règles, vos outils.</text>
+  </g>
+</svg>

@@ -5,7 +5,7 @@ import vm from 'node:vm';
 import { site } from '../site.config.js';
 
 const root = new URL('../', import.meta.url);
-const routes = ['/', '/technical-review', '/projects', '/fractional-ai-engineer', '/for-agencies', '/work', '/work/demo-vs-production', '/writing', '/writing/production-readiness', '/scorecard', '/about', '/contact', '/thank-you', '/404', '/fr/', '/fr/audit-ia', '/fr/agence-automatisation-ia', '/fr/contact'];
+const routes = ['/', '/technical-review', '/projects', '/fractional-ai-engineer', '/for-agencies', '/work', '/work/demo-vs-production', '/writing', '/writing/production-readiness', '/scorecard', '/about', '/contact', '/thank-you', '/404', '/fr/', '/fr/audit-ia', '/fr/agence-automatisation-ia', '/fr/agents-ia-entreprise', '/ai-agents-for-business', '/fr/contact'];
 const fileFor = path => new URL(path.endsWith('/') ? `${path.slice(1)}index.html` : `${path.slice(1)}${/\.[^/]+$/.test(path) ? '' : '.html'}`, root);
 const pages = new Map(routes.map(route => [route, readFileSync(fileFor(route), 'utf8')]));
 
